@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drum Kit</title>
+</head>
+<body>
+    <h1>Hit Any Key</h1>
+        <div class="keys">
+           
+            <button type="button" class="butn" id="clap">
+                <div data-key="65" class="key">
+                    <kbd>A</kbd>
+                    <span class="sound">CLAP</span>
+                </div>
+            </button>
+            
+        <button type="button" class="butn" id="hihat">
+            <div data-key="83" class="key">
+                <kbd>S</kbd>
+                <span class="sound">HIHAT</span>
+            </div>
+        </button >
+        <button type="button" id="kick">
+            <div data-key="68" class="key">
+                <kbd>D</kbd>
+                <span class="sound">KICK</span>
+            </div>
+        </button>
+        <button type="button" id="openhat">
+            <div data-key="70" class="key">
+                <kbd>F</kbd>
+                <span class="sound">OPENHAT</span>
+            </div>
+        </button>
+        <button type="button" id="boom">
+            <div data-key="71" class="key">
+                <kbd>G</kbd>
+                <span class="sound">BOOM</span>
+            </div>
+        </button>
+        <button type="button" id="ride">
+            <div data-key="72" class="key">
+                <kbd>H</kbd>
+                <span class="sound">RIDE</span>
+            </div>
+        </button>
+        <button type="button" id="snare">
+            <div data-key="74" class="key">
+                <kbd>J</kbd>
+                <span class="sound">SNARE</span>
+            </div>
+        </button>
+            <button type="button" id="tom">
+            <div data-key="75" class="key">
+                <kbd>K</kbd>
+                <span class="sound">TOM</span>
+            </div>
+        </button>
+            <button type="button" id="tink">
+            <div data-key="76" class="key">
+                <kbd>L</kbd>
+                <span class="sound">TINK</span>
+            </div>
+        </button>
+        </div>
+
+<audio data-key="0" id="claps" src="sounds/clap.mp3"></audio>
+<audio data-key="1" id="hihats"  src="sounds/Hihat.mp3"></audio>
+<audio data-key="2" src="sounds/Kick.mp3"></audio>
+<audio data-key="70" src="sounds/Openhat.mp3"></audio>
+<audio data-key="71" src="sounds/Boom.mp3"></audio>
+<audio data-key="72" src="sounds/Ride.mp3"></audio>
+<audio data-key="74" src="sounds/Snare.mp3"></audio>
+<audio data-key="75" src="sounds/Tom.wav"></audio>
+<audio data-key="76" src="sounds/Tink.wav"></audio>
+        <script src="main.js"></script>
+</body>
+</html>
